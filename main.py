@@ -1,6 +1,4 @@
-def main():
-    print("Hello from datascienceproject!")
+from src.DataScienceProject import logger
 
+logger.info("Starting the main application...")
 
-if __name__ == "__main__":
-    main()
