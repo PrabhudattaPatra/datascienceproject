@@ -1,0 +1,94 @@
+[2025-12-11 21:51:19,824: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-11 21:51:19,830: ERROR: common: Error reading YAML file: [Errno 2] No such file or directory: 'config\\params.yaml']
+[2025-12-11 21:54:16,324: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-11 21:54:16,326: ERROR: common: Error reading YAML file: [Errno 2] No such file or directory: 'config\\params.yaml']
+[2025-12-11 21:54:59,679: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-11 21:54:59,680: ERROR: common: Error reading YAML file: [Errno 2] No such file or directory: 'config\\params.yaml']
+[2025-12-11 21:55:51,218: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-11 21:55:51,229: INFO: common: YAML file: params.yaml loaded successfully]
+[2025-12-11 21:55:51,231: INFO: common: YAML file: schema.yaml loaded successfully]
+[2025-12-11 21:59:02,128: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-11 21:59:02,131: INFO: common: YAML file: params.yaml loaded successfully]
+[2025-12-11 21:59:02,132: INFO: common: YAML file: schema.yaml loaded successfully]
+[2025-12-11 21:59:44,846: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-11 21:59:44,848: INFO: common: YAML file: params.yaml loaded successfully]
+[2025-12-11 21:59:44,850: INFO: common: YAML file: schema.yaml loaded successfully]
+[2025-12-11 21:59:44,851: INFO: common: created directory at: artifacts]
+[2025-12-11 21:59:44,852: INFO: common: created directory at: artifacts\data_ingestion]
+[2025-12-11 21:59:44,854: INFO: 4027254811: Downloading data from https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv to artifacts\data_ingestion\data.csv]
+[2025-12-11 22:10:39,733: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-11 22:10:39,735: INFO: common: YAML file: params.yaml loaded successfully]
+[2025-12-11 22:10:39,737: INFO: common: YAML file: schema.yaml loaded successfully]
+[2025-12-11 22:10:39,739: INFO: common: created directory at: artifacts]
+[2025-12-11 22:10:39,741: INFO: common: created directory at: artifacts\data_ingestion]
+[2025-12-11 22:10:39,742: INFO: 3582574864: Downloading data from https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv to artifacts\data_ingestion\data.csv]
+[2025-12-11 22:11:01,515: ERROR: 3582574864: Failed to download data: HTTPSConnectionPool(host='archive.ics.uci.edu', port=443): Read timed out. (read timeout=20)]
+[2025-12-12 08:43:52,807: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-12 08:43:52,827: INFO: common: YAML file: params.yaml loaded successfully]
+[2025-12-12 08:43:52,833: INFO: common: YAML file: schema.yaml loaded successfully]
+[2025-12-12 08:43:52,836: INFO: common: created directory at: artifacts]
+[2025-12-12 08:43:52,839: INFO: common: created directory at: artifacts\data_ingestion]
+[2025-12-12 08:43:53,929: INFO: 242878487: artifacts\data_ingestion\data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 67F3:1A3852:127A4:2F8B8:693B8871
+Accept-Ranges: bytes
+Date: Fri, 12 Dec 2025 03:13:54 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ccu830050-CCU
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1765509234.861624,VS0,VE278
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c3868f589303f8a43af092d81d9fd4f1303d62b7
+Expires: Fri, 12 Dec 2025 03:18:54 GMT
+Source-Age: 0
+
+]
+[2025-12-12 10:44:29,357: INFO: main: Starting the main application...]
+[2025-12-12 10:44:29,357: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-12-12 10:44:29,367: INFO: common: YAML file: config\config.yaml loaded successfully]
+[2025-12-12 10:44:29,379: INFO: common: YAML file: params.yaml loaded successfully]
+[2025-12-12 10:44:29,384: INFO: common: YAML file: schema.yaml loaded successfully]
+[2025-12-12 10:44:29,385: INFO: common: created directory at: artifacts]
+[2025-12-12 10:44:29,390: INFO: common: created directory at: artifacts\data_ingestion]
+[2025-12-12 10:44:30,577: INFO: data_ingestion: artifacts\data_ingestion\data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 67F3:1A3852:127A4:2F8B8:693B8871
+Accept-Ranges: bytes
+Date: Fri, 12 Dec 2025 05:14:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ccu830055-CCU
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1765516471.727608,VS0,VE266
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 69f2a887e59f6480f6bb1ab2711d0622a29e6600
+Expires: Fri, 12 Dec 2025 05:19:30 GMT
+Source-Age: 0
+
+]
+[2025-12-12 10:44:30,643: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]

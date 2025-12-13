@@ -12,8 +12,8 @@ logging.basicConfig(
     level=logging.INFO,
     format=logging_str,
     handlers=[
-        logging.FileHandler(log_filepath),
-        logging.StreamHandler(sys.stdout)
+        logging.FileHandler(log_filepath), # log to a file(running_logs.log)
+        logging.StreamHandler(sys.stdout)  # log to console (standard output)
     ])
 
 logger = logging.getLogger("datasciencelogger")
