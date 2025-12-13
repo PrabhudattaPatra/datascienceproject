@@ -3,6 +3,8 @@ from src.DataScienceProject.constants import *
 from src.DataScienceProject.utils.common import read_yaml, create_directories
 from src.DataScienceProject.entity.config_entity import (DataIngestionConfig)
 from src.DataScienceProject.entity.config_entity import (DataValidationConfig)
+from src.DataScienceProject.entity.config_entity import (DatatrTransformationConfig)
+
 
 class ConfigurationManager:
     def __init__(
@@ -46,3 +48,15 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+    
+    def get_data_transformation_config(self) -> DatatrTransformationConfig:
+        config = self.config.data_trasformation     # Accessing data_transformation section from config.yaml
+
+        create_directories([Path(config.root_dir)])
+
+        data_transformation_config = DatatrTransformationConfig(
+        root_dir=Path(config.root_dir),
+        data_path=Path(config.data_path)
+        )
+
+        return data_transformation_config
