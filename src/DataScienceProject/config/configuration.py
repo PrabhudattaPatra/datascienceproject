@@ -4,6 +4,7 @@ from src.DataScienceProject.utils.common import read_yaml, create_directories
 from src.DataScienceProject.entity.config_entity import (DataIngestionConfig)
 from src.DataScienceProject.entity.config_entity import (DataValidationConfig)
 from src.DataScienceProject.entity.config_entity import (DatatrTransformationConfig)
+from src.DataScienceProject.entity.config_entity import (ModelTrainerConfig)
 
 
 class ConfigurationManager:
@@ -60,3 +61,21 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+    
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer     # Accessing model_trainer section from config.yaml
+        params = self.params.ElasticNet         # Accessing ElasticNet section from param.yaml
+        Schema = self.schema.TARGET_COLUMN      # Accessing target_name section from schema.yaml
+        create_directories([Path(config.root_dir)])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=Path(config.root_dir),
+            train_data_path=Path(config.train_data_path),
+            test_data_path=Path(config.test_data_path),
+            model_name=config.model_name,
+            alpha = params.alpha,
+            li_ratio = params.li_ratio,
+            target_column = Schema.name
+        )
+
+        return model_trainer_config
